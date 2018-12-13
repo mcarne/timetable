@@ -6,7 +6,7 @@ import datetime
 WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
 timetable = {
-    "valid_from": "2018-08-", 
+    "valid_from": "2018-08-01", 
     "valid_to": "2019-06-19",
     'label': 'Klasse 4c',
     "lessons": 
