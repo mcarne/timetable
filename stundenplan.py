@@ -89,18 +89,12 @@ def get_end(tt, day = datetime.datetime.today()):
     end_times = tt['end_times']
     if isinstance(day, str):
         day = datetime.date.fromisoformat(day)
-    print(day)
     weekday = day.isoweekday()
-    print(weekday)
     day_name = WEEKDAYS[weekday-1]
-    print(day_name)
     lessons_day = lessons[day_name]
     i = len(lessons_day)-1
-    print(f'i: {i}')
     while i >= 0:
         # (last) lesson item could be empty string
-        print(f'i: {i}')
-        print(f'Lesson: {lessons_day[i]}')
         if lessons_day[i]:
             break
         i -= 1
